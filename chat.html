@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple chat</title>
+	<link rel="stylesheet" type="text/css" href="chat.css">
+</head>
+<body>
+	<!-- HEADER BAR CAN HAVE THE NAME OF THE CHAT ROOM OR A LOGO -->
+	<div class="header"><img src="gun_logo_white.svg"></div>
+
+	<!-- THE BODY OF THE CHAT -->
+	<div class="body_chat">
+		<ul class="chat">
+			<li class="message" style="display: none">
+			<i class="when"></i>
+			<b class="who"></b>:
+			<span class="what"></span>
+			</li>
+		</ul>
+	</div>
+
+	<!-- TEXT INPUT AREA -->
+	<div class="text">
+		<form>
+			<input class="name"/>
+			<input class="content"/>
+			<button>Send</button>
+		</form>
+	</div>
+
+
+	<div class="model">
+		<li class="message">
+			<i class="when">0</i>
+			<b class="who"></b>:
+			<span class="what"></span>
+		</li>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://gungame.herokuapp.com/gun.js"></script>
+	<script type="text/javascript" src="chat.js"></script>
+</body>
+</html>
